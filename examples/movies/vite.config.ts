@@ -4,6 +4,7 @@ import icons from "unplugin-icons/vite";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "./",
   plugins: [
     icons({
       compiler: "solid",

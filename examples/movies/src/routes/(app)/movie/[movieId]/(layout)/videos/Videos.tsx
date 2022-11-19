@@ -2,7 +2,7 @@ import { For, Show } from "solid-js";
 import { createStore } from "solid-js/store";
 import { Modal } from "~/components/Modal";
 
-export default function Videos(props) {
+export default function VideoSection(props) {
   const [state, setState] = createStore({
     activeFilter: "all",
     activeVideos: props.videos,
@@ -35,7 +35,7 @@ export default function Videos(props) {
     setState("modalVisible", false);
     setState("modalStartAt", 0);
   };
-
+  // console.log(props.videos);
   return (
     <main>
       <div class="spacing">

@@ -15,21 +15,21 @@ export default function MoviePage() {
       </Show>
       <div class={`${styles.nav}`}>
         <A
-          href={`/movie/${useParams().movieId}`}
+          href={`/movie/${params.movieId}`}
           activeClass={styles.buttonActive}
           class={styles.button}
         >
           Overview
         </A>
         <A
-          href={`/movie/${useParams().movieId}/videos`}
+          href={`/movie/${params.movieId}/videos`}
           activeClass={styles.buttonActive}
           class={styles.button}
         >
           Videos
         </A>
         <A
-          href={`/movie/${useParams().movieId}/photos`}
+          href={`/movie/${params.movieId}/photos`}
           activeClass={styles.buttonActive}
           class={styles.button}
         >

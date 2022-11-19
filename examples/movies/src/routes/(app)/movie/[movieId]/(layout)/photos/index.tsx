@@ -1,7 +1,6 @@
-import { unstable_island, useParams } from "solid-start";
-import { useMovie } from "../useMovie";
-
-const Images = unstable_island(() => import("./Images"));
+import { useParams } from "solid-start";
+import { useMovie } from "../../useMovie";
+import Images from "./Images";
 
 export default function Photos() {
   const params = useParams();
